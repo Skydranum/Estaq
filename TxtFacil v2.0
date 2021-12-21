@@ -1,0 +1,43 @@
+def border(s1):
+    tam= len(s1)
+    if tam:
+        print('+','-' * tam, '+')
+        print('│', s1, '│')
+        print('+','-' * tam,'+')
+
+
+border('Bem-Vindo ao .txt Facil! Feito por Felipe Silveira para uso na ESTAQ')
+file = open("Para Google Earth OK.txt","w")
+
+#COMEÇO
+print('---Endereço---')
+file.write(input("RUA/AVENIDA:"))
+file.write(", ")
+file.write(str(input("NUMERO:")))
+file.write(", ")
+file.write(input("BAIRRO:"))
+file.write(" - ")
+file.write(input("CIDADE:"))
+file.write(" - ")
+file.write(input("ESTADO:"))
+file.write(" \n")
+
+#MEIO
+print('---SERVIÇO E CODIGO---')
+file.write(input("SERVIÇO PRESTADO:\n"))
+file.write(" \n")
+file.write(input("CODIGO:\n"))
+file.write(" (ORÇAMENTO)")
+file.write(" \n")
+file.write(" \n")
+
+#FINAL
+print('---SONDAGEM---')
+file.write(input("NOME DA EMPRESA:\n"))
+file.write(" \n")
+f = file.write(input("FUROS:"))
+if f == 1:
+    file.write(" Furo")
+else:
+    file.write(" Furos")
+file.write(" \n")
